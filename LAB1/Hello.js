@@ -1,1 +1,1 @@
-console.log("Welcome to FSD workshop!");
+console.log("Welcome to FSD Lab")
