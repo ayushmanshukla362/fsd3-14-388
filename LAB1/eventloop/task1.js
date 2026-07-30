@@ -19,12 +19,17 @@ const f3 = () => {
 function main(){
     console.log('main');
     f1();
+    // f2();
+    // f3();
+    console.log('main end');
     console.log('main end');
 }
 main();
-//javascript is synchronous and single threaded language.
-// in asychronous we use event loop to manage the call stack
-// asynchronous call using timer
-//setimeout
-//setimmediatee
-//process.nexttick
+
+// javascript is synchronous and single threaded language.
+// in asynchronous we use event loop to manage the call stack
+// asynchronous call using timer:-
+//   setTimeout
+//   setImmediate
+//   process.nextTick
+//   setInterval

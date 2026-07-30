@@ -1,4 +1,0 @@
-CRUD- operations
-create , retreat, update , delete
-await can be used with any promise in a ync function
-that a sync function will also accessed by await 
