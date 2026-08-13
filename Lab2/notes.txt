@@ -1,2 +1,2 @@
 FS is easy in JS
-this is appened data
+No, it's hard.

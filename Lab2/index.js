@@ -1,27 +1,30 @@
-import { writeFile , readFile, appendFile} from "fs/promises";
+import { writeFile, readFile, appendFile } from "fs/promises";
 
-// await writeFile('stud.txt', 'Ravikant Singh chauhan\nRoll NO: 82');
-// console.log("File written");
+// await writeFile("stud.txt", "Ravikant Singh\nRoll no: 82");
 
-// const data = await readFile("stud.txt" , "utf-8");
-// console.log(`File contents: ${data}`);
+// console.log("File Written");
 
-const addContent = async (fname, content)=>{
-    await writeFile(fname , content);
-    console.log("File written");
-    
+// const data = await readFile("stud.txt", 'utf-8'); //need to use 'await' in order to wait for the file.
 
-}
-const readContent = async (fname) =>{
-    const data = await readFile(fname , 'utf-8');
+// console.log(`file contents: ${data}`);
+
+
+
+const addContent = async (fname, content) => {
+    await writeFile(fname, content);
+    console.log(`${content} written in file: ${fname}`);
+};
+
+const readContent = async (fname) => {
+    const data = await readFile(fname, "utf-8");
     return data;
-}
-const appendData = async (fname , content)=>{
-    await appendFile(fname ,"\n"+ content);
-    console.log("file appened");
-    
-}
-await addContent('notes.txt', 'FS is easy in JS');
-console.log("content: " , await readContent("notes.txt"));
-await appendData("notes.txt" , "this is appened data");
-console.log("content: " , await readContent("notes.txt"));
+};
+
+const appendData = async (fname, content) => {
+    await appendFile(fname, "\n" + content);
+};
+
+await addContent("notes.txt", "FS is easy in JS");
+await appendData("notes.txt", "No, it's hard.");
+
+console.log(await readContent("notes.txt"));
