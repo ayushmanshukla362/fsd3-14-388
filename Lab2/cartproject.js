@@ -95,7 +95,7 @@ const main = async () => {
 
     switch(Number(choice)) {
         case 1:
-            await displayCart();
+            displayCart();
             break;
         case 2:
             const item = await cin.question("Enter product details (id,name,price,qty): ");
@@ -104,22 +104,19 @@ const main = async () => {
 
             break;
         case 3:
-            const pid = await cin.question("Enter product id to remove: ");
-            await removeProduct(Number(pid));
+            console.log("Remove Product");
             break;
         case 4:
-            const pid2 = await cin.question("Enter product id: ");
-            const newQty = await cin.question("Enter new quantity: ");
-            await updateQuantity(Number(pid2), Number(newQty));
+            console.log("Update Quantity");
             break;
         case 5:
             console.log("Checkout");
             break;
         case 6:
-            await emptyCart();
+            console.log("Empty Cart");
             break;
         case 7:
-            await calculateTotal();
+            console.log("Calculate Total Price");
             break;
         default:
             console.log("Invalid choice");
