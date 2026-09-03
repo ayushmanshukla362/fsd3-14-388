@@ -21,3 +21,11 @@ await can be used with any promise in async function; that async function will a
 -403-> FORBIDDEN
 -404-> NOT FOUND
 -500-> INTERNAL SERVER ERROR
+ 
+##Server can set Header to send data
+res.writeHeader()
+res.setHeader
+
+##Server can set status code
+res.statusCode()
+res.writeHeader()
