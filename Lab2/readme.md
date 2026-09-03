@@ -14,3 +14,10 @@ It allows JS code running outside the browser and interact directly to the OS.
 - Delete
 
 await can be used with any promise in async function; that async function will also be accessed by await keyword.
+
+##STATUS CODES
+-200-> OK
+-201-> CREATED
+-403-> FORBIDDEN
+-404-> NOT FOUND
+-500-> INTERNAL SERVER ERROR
