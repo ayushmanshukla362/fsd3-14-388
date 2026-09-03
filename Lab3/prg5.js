@@ -1,15 +1,14 @@
-import http from 'http';
+import http from "http";
 
 const server = http.createServer((req, res) => {
-    
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    const products = {
-        name: "mobile",
-        price: 10000,
-        discount: 10
-    };
-    res.end(JSON.stringify(products));
-    });
-server.listen(4000, () => {
-    console.log("Server is running")
-}); 
+  res.writeHead(200, { "content-type": "application/json" });
+  const product = {
+    name: "Mobile",
+    price: 25000,
+    discount: "10%",
+    company: "Samsung",
+  };
+  res.end(JSON.stringify(product));
+});
+
+server.listen(3000, () => console.log("server is running..."));

@@ -1,8 +1,14 @@
 [
   {
-    "id": 200,
-    "name": "speaker",
-    "price": 2000,
-    "qty": 2
+    "id": 123,
+    "name": "hp pavilion",
+    "price": 89000,
+    "qty": 1
+  },
+  {
+    "id": 1234,
+    "name": "Pen",
+    "price": 10,
+    "qty": 98
   }
 ]
