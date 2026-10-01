@@ -1,2 +1,5 @@
 lab3/node_modules
 lab3/big.txt
+node_modules/
+lab7/backend/node_modules
+lab7/frontend/node_modules
